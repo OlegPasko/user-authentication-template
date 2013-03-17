@@ -1,6 +1,11 @@
 Turbik::Application.routes.draw do
-  resources :pages
+  resources :sessions
+  resources :users
 
+  resources :pages
+  get 'signup', to: 'users#new', as: 'signup'
+  get 'login', to: 'sessions#new', as: 'login'
+  get 'logout', to: 'sessions#destroy', as: 'logout'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
