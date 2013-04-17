@@ -2,3 +2,6 @@
 Based on railscasts / 250-authentication-from-scratch-revised with some improvements.
 
 ps. Don't forget to rename app :)
+
+
+1) rails g resource User email password_digest
